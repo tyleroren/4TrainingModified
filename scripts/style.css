@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #2c3e50;
+    font-family: Helvetica, 'Open Sans', sans-serif;
+    height: 100%;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    min-height: 200px;
+}
+
+
+
+.logo img {    
+    margin-left: 20px;
+    height: 184px;
+    width: 240px;
+}
+
+.title {
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(218,170,0);
+    -webkit-text-stroke-color: rgb(0,62,106);
+    -webkit-text-stroke-width: 3px;
+    max-width: 550px;
+}
+
+.vidList,
+.timeStamp {
+    margin: 20px;
+}
+
+a {
+    color: rgb(222, 222, 255);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+.videoTitle {
+    font-weight: bolder;
+    font-size: 28px;
+    margin-left: 50px;
+    color: rgb(218,170,0);
+}
+
+.videoHeader {
+    font-weight: bolder;
+    font-size: 28px;
+    margin-left: 50px;
+    color: rgb(218,170,0);
+}
+
+.player {
+    margin: 10px;
+    height: 100%;
+}
+
+li::marker {
+    color: rgb(218,170,0);
+}
+
+.credits {
+    color: rgb(222, 222, 255);
+    font-size: 16px;
+}
+
+#videoPlayer {
+    width: 100vw;
+    height: 100vw;
+    max-width: 1600px;
+    max-height: 900px;
+}
+
+#documentPlayer {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    border-radius: 0.6em;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px 10px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+  
+    &:hover {
+        color: #fff;
+        outline: 0;
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    }
+    &:focus {
+        color: #fff;
+        outline: 0;
+    }
+}
+
+.invisible {
+    display: none;
+}
